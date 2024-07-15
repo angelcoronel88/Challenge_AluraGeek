@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AluraGeek</title>
+    <link rel="shortcut icon" href="./img/Vector.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+    <header class="cabezera">
+        <section class="principal_cabezera">
+            <div class="logo">
+                <div class="componente_cabezera">
+                    <a href="./challengeAlura.html">
+                    <img src="./img/image.png" alt="AluraGeek">
+                    </a>
+                </div>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="productos">
+            <div class="title-product">
+                <h2 class="">Mis Productos</h2>
+            </div>
+            <div class="contenedor">
+                <!-- <div class="tarjeta">
+                  <div class="cuerpo">
+                    <img src="./img/A Way Out (PS4).jfif" alt="muestra" class="img-producto">
+                    <p>A way Out</p>
+                    <div>
+                        <p>$50.000</p>
+                        <img src="" alt="">
+                    </div>
+                  </div> -->
+            </div>
+        </section>
+        <section class="formulario">
+            <form action="formulario_container" data-form>
+                <fieldset>
+                    <legend class="titulo_producto">Agregar nuevo producto</legend>
+
+                    <div class="input-container">
+                        <input type="text" name="nombre" id="nombre" class="input" placeholder="Nombre" required data-tipo="nombre" pattern="[\s\S]{4,40}">
+                        <label for="nombre" class="input-label"></label>
+                    </div>
+                    <div class="input-container">
+                        <input type="text" name="precio" id="precio" class="input" placeholder="Precio" required data-tipo="precio" pattern="[\s\S]{4,20}">
+                        <label for="precio" class="input-label"></label>
+                    </div>
+                    <div class="input-container">
+                        <label for="input_image" class="input_image_label">Subir Imagen</label>
+                        <input type="file" name="imagen" id="imagen" class="agregar_imagen_input" placeholder="imagen" required data-input="agregar_imagen_producto" accept="image/*">
+                    </div>
+                </fieldset>
+                <button type="submit" class="btn_enviar">Enviar</button>
+                <button type="reset" class="btn_limpiar">Limpiar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section class="footer">
+            <div class="menu_contacto">
+                <div class="menu_contacto_box">
+                    <div class="menu_contacto_contenido">
+                        <a href="./challengeAlura.html">
+                            <img src="./img/image.png" alt="AluraGeek">
+                            <div class="footer_end">
+                                <h3></h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+    <script type="module" src="js/renderizarproductos.js"></script>    
+    <script type="module" src="js/nuevo_producto.js"></script></body>
+</html>
